@@ -1,0 +1,617 @@
+body{
+    margin: 0;
+    font-family: "Gowun Batang", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+#frame_1{
+    background-color: #00102D;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    position: relative;
+}
+.title{
+text-align: center;
+color: white;
+font-size: 100px;
+font-style: border;
+margin-top: 10%;
+justify-content: center;
+padding: auto;
+overflow: hidden; 
+white-space: nowrap; 
+/*make the title appears in-line*/
+animation: typing 2s steps(30, end);
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100%;}
+  }
+p{
+    color: white;
+    font-size: 35px;
+    position: absolute;
+    text-align: right;
+    right: 10vw;
+    justify-content: center;
+    padding: auto;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing2 2.5s steps(40, end);
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+    opacity: 0;
+}
+@keyframes typing2 {
+    0% {
+        width: 0;
+        opacity: 0.5;
+    }
+    50%{
+        width: 50%;
+        opacity: 1;
+    }
+    100% {
+        width: 100%;
+        opacity: 1;
+    }
+}
+.picture{
+    position: absolute;
+    align-items: center;
+    left: 40%;
+    top: 45vh;
+    background-size: cover;
+    height: 50%;
+    padding: auto;
+}
+.picture:hover{
+    transform: scale(1.025);
+}
+#frame_2{
+    background-image: linear-gradient(to bottom, #00102D 90%, #FFF9D8);
+    height: 100vh;
+    display: flex;
+    position: relative;
+}
+.poem{
+font-size: 35px;
+color: white;
+position: absolute;
+right: 10vw;
+top: 35vh;
+z-index: 1;
+}
+.shadow2{
+    width: 13vw;
+    height: 5vh;
+    border-radius: 50%;
+    background-color: black; 
+    position: absolute;
+    z-index: 0;
+    left: 23vw; 
+    top: 79.5vh; 
+    opacity: 0.25;
+}
+.clock{
+    background-size: cover;
+    position: relative;
+    display: flex;
+}
+.clock-face{
+    background-color: white;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    opacity: 1;
+    top: 10vh;
+    left: 20vw;
+    display: flex;
+}
+.hour{
+    background-color: black;
+    position: absolute;
+    width: 3px;
+    height: 40px;
+    border-radius: 3px;
+    left: 24.25vw;
+    top: 13.75vh;
+    animation-name: sec;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 10s;
+    transform-origin: bottom;
+    z-index: 4;
+    display: flex;
+}
+@keyframes sec{
+    from{ transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+.minute{
+    background-color: black;
+    position: absolute;
+    width: 3px;
+    height: 60px;
+    border-radius: 3px;
+    left: 24.25vw;
+    top: 17.75vh;
+    transform: rotate(90deg);
+    animation-name: min;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 6s;
+    transform-origin: top;
+    z-index: 4;
+    display: flex;
+}
+@keyframes min{
+    from{ transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+.table{
+    background-size: cover;
+    width: 100%;
+    height: 30vh;
+    position: absolute;
+    top: 62vh;
+    align-items: center;
+    }
+.girl{
+    z-index: 1;
+    background-size: cover;
+    height: 60vh;
+    position: absolute;
+    align-items: center;
+    left:40vw;
+    top: 14vh;
+}
+.lamp{
+    z-index: 1;
+    background-size: cover;
+    position: absolute;
+    align-items: center;
+    left: 25vw;
+    top: 50vh;
+}
+.photo{
+    background-size: cover;
+    position: absolute;
+    top: 65vh;
+    left: 43vw;
+}
+.think{
+    background-size: cover;
+    position: absolute;
+    right: 5vw;
+    top: 2vh;
+    z-index: 1;
+}
+#granny-face{
+    background-size: cover;
+    top: 5vh;
+    position: absolute;
+    right: 12vw;
+    width: 10vw;
+    z-index: 2;
+    animation: fade-in 6s infinite ease-in-out;
+}
+@keyframes fade-in {
+    0%{opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{opacity: 1;}
+}
+#baomchau{
+    background-size: cover;
+    position: absolute;
+    right: 12vw;
+    width: 10vw;
+    z-index: 2;
+    top: 3.75vh;
+    opacity: 0;
+    animation: fade-out 6s infinite ease-in-out;
+}
+@keyframes fade-out {
+    0%{opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{opacity: 0;}
+}
+#frame_3{
+    background-color: #FFF9D8;
+    height: 100vh;
+    display: flex;
+    margin: auto;
+    text-align: left;
+    position: relative;
+    padding: auto;
+}
+.effect1{
+    background-size: cover;
+}
+.shadow1{
+    width: 15vw;
+    height: 5vh;
+    transform: rotate(-11deg);
+    border-radius: 50%;
+    background-color: grey; 
+    position: absolute;
+    z-index: 0;
+    left: 47vw; 
+    top: 65vh; 
+    opacity: 0.25;
+}
+.highlight{
+    font-style: italic;
+}
+.highlight:hover{
+    text-shadow: 2px 1px 5px #FFF9D8;
+}
+.poem2{
+    color: black;
+    font-size: 35px;
+    position: absolute;
+    left: 10vw;
+    top: 35vh;
+}
+.highlight1{
+font-style: italic;
+}
+.highlight1:hover{
+    text-shadow: 1px 1px 4px #bbbccb;
+}
+.house{
+float: right;
+clear: left;
+right: 0;
+position: absolute;
+top: 5vh;
+background-size: cover;
+width: 40%;
+}
+.lake{
+    position: absolute;
+    background-size: cover;
+    left: 30vw;
+    top: 70vh;
+    width: 25%;
+}
+#lake-effect{
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.ef1{
+    position: absolute;
+    left: 35vw;
+    top: 75vh;
+    opacity: 0;
+    animation: fade-in1 2s infinite ease-in;
+    animation-fill-mode: forwards;
+}
+@keyframes fade-in1{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+.ef2{
+    position: absolute;
+    left: 37vw;
+    top: 80vh;
+    opacity: 1;
+    animation: fade-out2 3s infinite ease-out;
+    animation-fill-mode: forwards;
+}
+@keyframes fade-out2{
+    from{
+        opacity: 1;
+    }
+    to{opacity: 0;}
+}
+.ef3{
+    position: absolute;
+    top: 77vh;
+    left: 43vw;
+    width: 150%;
+    opacity: 1;
+    animation: fade-out2 2s infinite ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 3.5s;
+}
+.ef4{
+    position: absolute;
+    top: 80vh;
+    left: 32vw;
+    opacity: 1;
+    animation: fade-out2 3s infinite ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+.ef5{
+    position: absolute;
+    top: 85vh;
+    left: 43vw;
+    opacity: 0;
+    animation: fade-in1 2.5s infinite ease-in;
+    animation-delay: 0.5s;
+}
+.ef6{
+    position: absolute;
+    top: 80vh;
+    left: 50vw;
+    transform: rotate(90deg);
+    opacity: 1;
+    animation: fade-out2 2s infinite ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+.ef7{
+    position: absolute;
+    top: 87vh;
+    left: 35vw;
+    opacity: 0;
+    animation: fade-in1 2s infinite ease-in;
+    animation-delay: 3s;
+}
+.ef8{
+    position: relative;
+    top: 72vh;
+    left: 46vw;
+    width: 100%;
+    opacity: 0;
+    animation: fade-in1 2s infinite ease-in;
+    animation-delay: 3.5s;
+}
+.bachamsoc{
+    position: absolute;
+    background-size: cover;
+    left: 45.5vw;
+    top: 25.5vh;
+    height: 45%;
+    z-index: 1;
+}
+.hat{
+    position: absolute;
+    background-size: cover;
+    left: 45.5vw;
+    top: 50vh;
+    z-index: 0;
+    animation-name: hatroi;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes hatroi{
+    from{
+        top: 50vh;
+        opacity: 1;
+    }
+    to{
+        top: 65vh;
+        opacity: 0;
+    }
+}
+#frame_4{
+    background-color: #FFF9D8;
+    height: 100vh;
+    display: flex;
+    margin: auto;
+    position: relative;
+}
+.poem3{
+color: black;
+font-size: 35px;
+position: absolute;
+right: 10vw;
+top: 35vh;
+}
+.bachau{
+    position: absolute;
+    background-size: cover;
+    align-items: center;
+    top: 20vh;
+    left: 35vw;
+    z-index: 2;
+}
+.balloon{
+    position: relative;
+    background-size: cover;
+}
+.blue-balloon{
+    position: absolute;
+    top: 32.75vh;
+    left: 57.75vw;
+    width: 50%;
+    transform-origin: bottom;
+    animation: fly 2s linear alternate-reverse infinite;
+}
+.pink-balloon{
+    position: absolute;
+    top: 36.25vh;
+    left: 56.25vw;
+    width: 42%;
+    transform-origin: bottom;
+    animation: fly1 1.5s linear alternate-reverse infinite;
+}
+.yellow-balloon{
+    position: relative;
+    top: 38vh;
+    left: 58.25vw;
+    transform-origin: bottom;
+    width: 75%;
+    transform: rotate(-10deg);
+    animation: fly2 1s linear alternate-reverse infinite;
+}
+@keyframes fly{
+    from{transform: rotate(-10deg);
+    }
+    to{transform: rotate(5deg);
+    }
+}
+@keyframes fly1{
+    from{transform: rotate(10deg);
+    }
+    to{transform: rotate(-10deg);
+    }
+}
+@keyframes fly2{
+    from{transform: rotate(-10deg);
+    }
+    to{transform: rotate(-19deg);
+    }
+}
+.think2{
+    background-size: cover;
+    width: 25%;
+    position: absolute;
+    top: 10vh;
+    left: 8vw;
+}
+.think2:hover+.successgirl{
+    opacity: 1;
+}
+.successgirl{
+    background-size: cover;
+    top: 11vh;
+    position: absolute;
+    width: 7%;
+    left: 14vw;
+    opacity: 0;
+}
+#frame_5{
+    background-color: #FFF9D8;
+    display: flex;
+    height: 100vh;
+    font-size: 35px;
+    position: relative;
+}
+.poem4{
+    position: absolute;
+    left: 10vw;
+    top: 10vh;
+}
+.bavoichau{
+    top: 15vh;
+    position: absolute;
+    right: 10vw;
+    background-size: cover;
+    width: 50%;
+}
+.bavachau{
+    top: 22vh;
+    padding: auto;
+    right: 19vw;
+    position: absolute;
+    background-size: cover;
+    width: 8%;
+    opacity: 0;
+}
+.noi{
+    background-size: cover;
+    position: absolute;
+    top: 20vh;
+    right: 14vw;
+    width: 18%;
+    animation: talk 2s alternate-reverse infinite linear;
+    transform-origin: bottom
+}
+@keyframes talk{
+    from{transform: rotate(-5deg);}
+    to{
+        transform: rotate(5deg);
+    }
+}
+.noi:hover{
+    animation-play-state: paused;
+}
+.noi:hover+.bavachau{
+    opacity: 1;
+}
+#frame_6{
+    background-image: linear-gradient(to top, #00102D 90%, #FFF9D8);
+    height: 100vh;
+    font-size: 35px;
+    color: white;
+    position: relative;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    padding: auto;
+}
+.poem5{
+    position: absolute;
+    top: 20vh;
+    right: 5vw;
+}
+.den{
+    background-size: cover;
+    width: 20%;
+    position: absolute;
+    top: 20vh;
+    left: 17vw;
+}
+.den:hover+.bong{
+    opacity: 0.5;
+}
+.bamo{
+    background-size: cover;
+    width: 35%;
+    left: 30vw;
+    top: 35vh;
+    position: absolute;
+    z-index: 1;
+}
+.nuocmat{
+    background-size: cover;
+    position: absolute;
+    left: 51vw;
+    top: 45vh;
+    z-index: 2;
+    width: 0.25%;
+    transform: rotate(-13deg);
+    animation-name: roi;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes roi{
+    from{
+        top: 45.75vh;
+        opacity: 1;
+    }
+    to{
+        top: 47vh;
+        opacity: 0;
+    }
+}
+.bong{
+    background-size: cover;
+    width: 40%;
+    position: absolute;
+    top: 21vh;
+    left: 26vw;
+    transform: rotate(-10deg);
+    opacity: 0;
+    z-index: 1;
+}
+.shadow {
+    width: 10vw;
+    height: 4vh;
+    border-radius: 50%;
+    background-color: white; 
+    position: absolute;
+    z-index: 0;
+    left: 47vw; 
+    top: 84.75vh; 
+    opacity: 0.25;
+    background-size: cover;
+}

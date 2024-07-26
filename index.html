@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Interactive Web-based Poetry</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap" rel="stylesheet">
+</head>
+
+<body>
+   <section id="frame_1">
+    <div>
+    <div class="title">BÀ TUYỆT NHẤT LÒNG CON ĐÓ</div>
+    <!--author name-->
+    <p>Em Bé Đang Lớn</p>
+    <img id="bangoai" class="picture" src="Asset 36.png" alt="Clickable image">
+    <audio id="sound" src="sound.ogg" preload="auto"></audio>
+      <script>
+        const image = document.getElementById('bangoai');
+        const sound = document.getElementById('sound');
+
+        image.addEventListener('click', function() {
+          sound.currentTime = 0;
+          sound.play();
+        });
+      </script>
+
+  </div>
+     </section>
+     
+    <section id="frame_2">
+      <div>
+      <div class="poem">
+        Hôm nay con chợt nhớ<br>
+        Về <span class="highlight" >nụ cười</span> của bà<br>
+        Nhớ đêm dài <span class="highlight" >nằm cạnh</span> <br>
+        Để nghe bà chuyện trò.</div>
+      <img class="table" src="cai-ban.png">
+      <img class="girl" src="Asset 27.png">
+      <img class="lamp" src="lamp.png">
+      <img class="photo" src="photo.png">
+      <div class="think">
+      <img class="think" src="think.png">
+      <img id="granny-face" src="granny face.png"> 
+      <img id="baomchau" src="baomchau.png"></div>
+      <div class="shadow2"></div>
+      <div class="clock">
+        <span class="clock-face" ></span>
+        <span class="hour"></span>
+        <span class="minute"></span>
+      </div>
+    </div>
+       </section>
+
+       <section id="frame_3">
+        <div>
+        <div class="poem2">
+          Nhớ về <span class="highlight1" >gian nhà nhỏ</span><br>
+          Có bóng bà vào ra <br>
+          Nhớ <span class="highlight1">ao cá xanh trong</span> <br>
+          Được bà chăm, bà bón</div>
+        <img class="house" src="house.png">
+        <img class="bachamsoc" src="bachamsoc.png">
+        <img class="hat" src="hat.png" width="20" height="">
+        <img src="lake.png" class="lake">
+        <span class="shadow1" ></span>
+        <div id="lake-effect">
+            <img src="effect 1.png" class="ef1">
+            <img src="effect 2.png" class="ef2">
+            <img src="effect 3.png" class="ef3">
+            <img src="effect 4.png" class="ef4">
+            <img src="effect 5.png" class="ef5">
+            <img src="effect 6.png" class="ef6">
+            <img src="effect 7.png" class="ef7">
+            <img src="effect 8.png" class="ef8">
+        </div>
+        </div>
+         </section>
+
+         <section id="frame_4">
+          <div>
+          <div class="poem3">
+            Bà muốn con <span class="highlight1" >khôn lớn</span>,<br>
+            Sẽ luôn thật <span class="highlight1" >thành công</span> <br>
+            Vì bà biết mình không <br>
+            Chở che con mãi được.</div>
+          <img class="bachau" src="bachau.png">
+          <img class="think2" src="think2.png">
+          <img class="successgirl" src="success girl.png">
+          <div class="balloon">
+          <img class="blue-balloon" src="blue balloon.png">
+          <img class="pink-balloon" src="pink balloon.png">
+          <img class="yellow-balloon" src="yellow balloon.png">
+          </div>
+        </div>
+           </section>
+
+           <section id="frame_5">
+            <div>
+              <div class="poem4">
+                Bà dặn con <span class="highlight1" >sống tốt</span> <br>
+                Nhất định<span class="highlight1" > phải luôn vui</span> <br>
+                Như thế nơi xa ấy <br>
+                Bà mới được yên lòng. <br>
+                <br>
+                Con lắc đầu nói nhỏ: <br>
+                “Bà phải <span class="highlight1"> sống thật lâu</span> <br>
+                Ở tương lai xa đó <br>
+                Sẽ có <span class="highlight1">bà cháu mình.”</span><br> </div>
+                <img class="bavoichau" src="bavoichau.png">
+                <img class="noi" src="noi.png">
+                <img class="bavachau" src="bavachau.png">
+            </div>
+           </section>
+
+           <section id="frame_6">
+            <div>
+              <div class="poem5">
+                Bà ơi, bà có thấy? <br>
+                Con đã lớn thế này <br>
+                Con nơi này <span class="highlight">đợi mãi</span> <br>
+                <span class="highlight">Chẳng thấy </span> bà về thăm. <br>
+                <br>
+                Đi qua hết thăng trầm <br>
+                Con <span class="highlight">tìm về chốn cũ</span> <br>
+                Bà ơi, con đi mãi <br>
+                <span class="highlight" >Chẳng thấy</span> nơi để về… </div>
+              <img class="nuocmat" src="nuocmat.png">
+              <img class="bamo" src="bamo.png">
+              <div id="streetlight">
+              <img class="den" src="den.png">
+              <img class="bong" src="bong.png">
+              <span class="shadow" ></span>
+            </div>
+            </div>
+           </section>
+          
+</body>
+</html>
